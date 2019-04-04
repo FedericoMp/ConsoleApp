@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="functions\Calculadora.cs" />
     <Compile Include="functions\Printer.cs" />
+    <Compile Include="functions\SuperStrings.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
