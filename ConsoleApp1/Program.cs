@@ -22,7 +22,10 @@ namespace ConsoleApp1
             Console.WriteLine("num2: ");
             string num2 = Console.ReadLine();
 
-            Console.WriteLine("Result: " + calc.sumar(num1,num2));
+            Console.WriteLine("---------------");
+
+            Console.WriteLine("Suma result: " + calc.sumar(num1,num2));
+            Console.WriteLine("Resta result: " + calc.restar(num1,num2));
             Console.ReadKey();
         }
     }
