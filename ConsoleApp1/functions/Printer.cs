@@ -4,13 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp1.functions
+namespace ConsoleTest.functions
 {
     class Printer
     {
-        public void PrintSomething(out string str)
+        //Printer Out
+        public void PrintOut(out string str)
         {
-            str = "Print string with: \'out\'...";
+            str = "Print string with: \'out\'";
+        }
+
+        //Printer Ref
+        public void PrintRef(ref string str)
+        {
+            str = "Print string with: \'ref\'";
         }
     }
 }

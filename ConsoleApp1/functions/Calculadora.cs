@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp1.functions
+namespace ConsoleTest.functions
 {
     class Calculadora
     {
+        //Sumar method
         public int Sumar(string num1, string num2)
         {
             short n1 = short.Parse(num1);
@@ -15,6 +16,8 @@ namespace ConsoleApp1.functions
             int suma = n1 + n2;
             return suma;
         }
+
+        //Restar method
         public int Restar(string num1, string num2)
         {
             short n1 = short.Parse(num1);
