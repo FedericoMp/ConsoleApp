@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using CalculaMaster;
+using ConsoleApp1.functions;
 
 namespace ConsoleApp1
 {
@@ -12,9 +12,10 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Calculadora calc = new Calculadora();
+            Calculadora Calc = new Calculadora();
+            Printer PrintFrom = new Printer();
 
-            Console.WriteLine("Calculator:\n");
+            Console.WriteLine("Program:\n");
 
             Console.WriteLine("num1: ");
             string num1 = Console.ReadLine();
@@ -22,10 +23,14 @@ namespace ConsoleApp1
             Console.WriteLine("num2: ");
             string num2 = Console.ReadLine();
 
-            Console.WriteLine("---------------");
+            Console.WriteLine("---------------\n");
 
-            Console.WriteLine("Suma result: " + calc.sumar(num1,num2));
-            Console.WriteLine("Resta result: " + calc.restar(num1,num2));
+            string res;
+            PrintFrom.PrintSomething(out res);
+
+            Console.WriteLine(res + "\n");
+            Console.WriteLine("Suma result: " + Calc.Sumar(num1,num2));
+            Console.WriteLine("Resta result: " + Calc.Restar(num1,num2));
             Console.ReadKey();
         }
     }
