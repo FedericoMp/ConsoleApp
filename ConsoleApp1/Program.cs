@@ -18,7 +18,7 @@ namespace ConsoleTest
             SuperStrings SuperStr = new SuperStrings();
 
             Console.WriteLine("- ConsoleTest -");
-            Console.WriteLine($"at time: {Convert.ToString(SuperStr.RetornaFecha())}");
+            Console.WriteLine($"{Convert.ToString(SuperStr.RetornaFecha())}");
 
             Console.WriteLine("---------------\n");
 
@@ -31,8 +31,8 @@ namespace ConsoleTest
             string num2 = Console.ReadLine();
 
             //Calculadora
-            Console.WriteLine("\nSuma result: " + Calc.Sumar(num1, num2));
-            Console.WriteLine("Resta result: " + Calc.Restar(num1, num2) + "\n");
+            Console.WriteLine("\nSuma resultado: " + Calc.Sumar(num1, num2));
+            Console.WriteLine("Resta resultado: " + Calc.Restar(num1, num2) + "\n");
 
             Console.WriteLine("---------------\n");
 
@@ -49,7 +49,7 @@ namespace ConsoleTest
 
             Console.WriteLine("---------------\n");
 
-            Console.WriteLine("Ingresar cadena de texto:");
+            Console.WriteLine("Ingresar cadena de texto, imprime los 4 primeros caracteres::");
             string cadena = Console.ReadLine();
             Console.WriteLine(SuperStr.MutaCadena(cadena));
 
