@@ -9,7 +9,7 @@ using ConsoleTest.functions;
 namespace ConsoleTest
 {
     class Program
-    {
+    { 
         static void Main(string[] args)
         {
             //instance of functions
